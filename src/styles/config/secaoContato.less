@@ -1,0 +1,66 @@
+@import "./mapas.less";
+
+#contato {
+    background-color: #colors[secaoContatoColor];
+    padding-top: 200px;
+
+    .contato {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: #colors[textColor];
+        }
+
+        .formulario input,
+        textarea,
+        label,
+        p {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p, label {
+            color: #colors[textColor];
+        }
+
+        .textarea-fixo {
+            resize: none;
+        }
+
+        .product-button {
+            display: block;
+            background-color: #colors[buttonColor];
+            color: #colors[textColor];
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #colors[buttonHoverColor];
+            }
+        }
+
+        .rede-sociais {
+            margin-top: 0;
+            padding-bottom: 10px;
+            h1 {
+                padding-bottom: 16px;
+            }
+            nav ul {
+                display: flex;
+                img {
+                    transition: all ease .3s;
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS Viagens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="./imagens/logo.jpg" />
+            </div>
+            <h1>DAS Agência de Viagens</h1>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#produto">Destinos</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="produto">
+        <div class="container alin">
+            <h2>DESTINOS</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="./imagens/londres.jpg" alt="londres" />
+                    <h4>Cidade de Londres</h4>
+                    <p>
+                        Capital da Inglaterra
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Londres" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="./imagens/moscou.jpg" alt="moscou" />
+                    <h4>Cidade de Moscou</h4>
+                    <p>
+                        Capital da Russia
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Moscovo" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="./imagens/nova-york.jpg" alt="nova-york" />
+                    <h4>Cidade de Nova York</h4>
+                    <p>
+                        Capital Estados Unidos
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Nova_york" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="./imagens/quebec.jpg" alt="quebec" />
+                    <h4>Cidade de Quebec</h4>
+                    <p>
+                        Capital da Canada
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Quebec" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="./imagens/sydney.jpg" alt="sydney" />
+                    <h4>Cidade de Sydney</h4>
+                    <p>
+                        Capital da Australia
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Sydney" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="./imagens/tokio.jpg" alt="tokio" />
+                    <h4>Cidade de Tokio</h4>
+                    <p>
+                        Capital do Japão
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/T%C3%B3quio" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container contato">
+            <div class="formulario">
+                <h1>Contatos</h1>
+                <p>Preencha os campos abaixo:</p>
+                <form method="post" id="meuFormulario">
+                    <div>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea class="textarea-fixo" name="mensagem" id="mensagem" rows="5"></textarea>
+                    </div>
+
+                    <a href="https://clinicadeolhosdrfrederico.com.br/wp-content/uploads/2019/08/formulario-sucesso.png"
+                        target="_blank" class="product-button" id="botaoEnviar">
+                        Enviar
+                    </a>
+                </form>
+            </div>
+            <div class="rede-sociais">
+                <h1>Redes Sociais</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/deiveaparecido.silva">
+                                <img src="./imagens/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="redes-sociais">
+                            <a target="_blank" href="https://www.instagram.com/deivesilva1973/">
+                                <img src="./imagens/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="redes-sociais">
+                            <a target="_blank" href="https://www.linkedin.com/in/deivesilva/">
+                                <img src="./imagens/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                        <li class="redes-sociais">
+                            <a target="_blank" href="https://github.com/Deiveas">
+                                <img src="./imagens/github.svg" alt="github">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="container">
+            <h3>&copy; 2023 - Desenvolvido por Deive Silva - Todos direitos reservados</h3>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('botaoEnviar').addEventListener('click', function (event) {
+            let formulario = document.getElementById('meuFormulario');
+            let camposObrigatorios = formulario.querySelectorAll('[required]');
+
+            for (var i = 0; i < camposObrigatorios.length; i++) {
+                var campo = camposObrigatorios[i];
+
+                if (!campo.value.trim()) {
+                    event.preventDefault();
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    return;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

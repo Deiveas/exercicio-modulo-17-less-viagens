@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #130f40;
+    position: sticky;
+    color: #fff;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+header .branding img {
+    width: 70%;
+    border-radius: 16px;
+}
+
+.branding {
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.alin h2 {
+    padding-top: 140px;
+    font-weight: bold;
+}
+
+section {
+    padding: 56px 0;
+}
+
+#produto {
+    background-color: #CEF6F5;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-item {
+    width: 50%;
+    text-align: center;
+}
+
+.product-button {
+    display: block;
+    background-color: #44bd32;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.product-button:hover {
+    background-color: #4cd137;
+}
+
+#contato {
+    background: #182C61;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario {
+    width: 40%;
+    color: #fff;
+}
+
+.formulario input, textarea, label, p {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textarea-fixo {
+    resize: none;
+}
+
+.rede-sociais {
+    width: 60%;
+    padding-left: 40px;
+}
+
+.rede-sociais h1 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav img {
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.rodape {
+    background-color: #CEF6F5;
+    padding-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+    
+    #produto {
+        padding-bottom: 100px;
+    }
+
+    .alin {
+        padding-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .products,
+    header>.container {
+        display: block;
+    }
+
+    .branding {
+        width: 50%;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
