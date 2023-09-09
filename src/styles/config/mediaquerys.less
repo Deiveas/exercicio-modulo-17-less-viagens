@@ -3,10 +3,31 @@
 
 @media @breakpointMobile {
 
+    .products {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-item {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .product-button {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+
     .products,
     header>.container {
         display: block;
     }
+
+
 
     .branding {
         width: 50%;
@@ -14,6 +35,7 @@
 
     .product-item {
         margin-bottom: 32px;
+
     }
 }
 
@@ -21,10 +43,12 @@
     .container {
         max-width: 80%;
     }
+
     .products {
         grid-template-columns: repeat(2, 48.5%);
         column-gap: 3%;
     }
+
     #produto {
         padding-bottom: 100px;
     }

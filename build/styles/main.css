@@ -149,6 +149,22 @@ header .menu a {
   font-weight: bold;
 }
 @media (max-width: 767px) {
+  .products {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-item {
+    text-align: center;
+    margin: 20px;
+  }
+  .product-button {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
   .products,
   header > .container {
     display: block;
