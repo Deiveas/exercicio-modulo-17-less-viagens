@@ -149,6 +149,10 @@ header .menu a {
   font-weight: bold;
 }
 @media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .container h2 {
     text-align: center;
   }
@@ -161,7 +165,7 @@ header .menu a {
   }
   .product-item {
     text-align: center;
-    margin: 20px;
+    margin: 100px;
   }
   .product-button {
     display: block;
@@ -173,10 +177,17 @@ header .menu a {
     display: block;
   }
   .branding {
-    width: 50%;
+    width: 100%;
+    padding-left: 100px;
+  }
+  .alin h2 {
+    padding-top: 200px;
   }
   .product-item {
     margin-bottom: 32px;
+  }
+  .contato h1 {
+    padding-top: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
